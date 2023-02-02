@@ -5,3 +5,21 @@
 // 7 -> да
 // 1 -> нет
 
+Console.Clear();
+Console.Write("Введите цифру обозначающую день недели: ");
+int a = Convert.ToInt32(Console.ReadLine());
+if (a >= 1 && a <= 7) 
+{
+    if (a == 6 || a == 7) 
+    {
+        Console.WriteLine("Ура! Выходной день!");
+    }
+    else 
+    {
+        Console.WriteLine("Просыпайся!!! Сегодня рабочий день!!!");
+    }
+}
+else 
+{
+Console.WriteLine("Ошибка! Ввели неправильный день недели!");
+}
