@@ -7,6 +7,15 @@
 
 
 Console.Clear();
-
 Console.Write("Введите трехзначное число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+string text = Console.ReadLine();
+if (text.Length == 3) 
+{
+    int a = Convert.ToInt32(text);
+    Console.WriteLine("Вторая цифра вычесленная математическим способом: " + a/10%10);
+    Console.WriteLine("Вторая цифра вычесленная через массив: " + text[1]);
+}
+else 
+{
+    Console.WriteLine("Число не трехзначное!!!");
+}
