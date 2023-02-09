@@ -6,7 +6,7 @@
 
 Console.Clear();
 Console.Write("Введите число: ");
-string text = Console.ReadLine(); // Сначала ввожу строковой тип чтобы потом использовать для решения через массив
+string? text = Console.ReadLine(); // Сначала ввожу строковой тип чтобы потом использовать для решения через массив
 int a = Convert.ToInt32(text);
 if (a > 99) 
 {
@@ -21,7 +21,7 @@ else
     Console.WriteLine("Третьей цифры нет!!!");
 }
 
-if (text.Length >= 3)
+if (text?.Length >= 3)
 {
     Console.WriteLine("Третья цифра заданного числа через строку: " + text[2]);
 }

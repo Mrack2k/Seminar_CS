@@ -8,8 +8,8 @@
 
 Console.Clear();
 Console.Write("Введите трехзначное число: ");
-string text = Console.ReadLine(); // Сначала ввожу строковой тип чтобы потом использовать для решения через массив
-if (text.Length == 3) 
+string? text = Console.ReadLine(); // Сначала ввожу строковой тип чтобы потом использовать для решения через массив
+if (text?.Length == 3) 
 {
     int a = Convert.ToInt32(text);
     Console.WriteLine("Вторая цифра вычесленная математическим способом: " + a/10%10);
