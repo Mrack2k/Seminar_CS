@@ -5,10 +5,10 @@
 
 Console.Clear();
 Console.Write("Введите трехмерные координаты точки A через пробел (X Y Z): ");
-string a = Console.ReadLine();
+string? a = Console.ReadLine();
 string[] CoordA = a.Split(' '); // погуглил тк захотелось вводить координаты в одной строке
 Console.Write("Введите трехмерные координаты точки B через пробел (X Y Z): ");
-string b = Console.ReadLine();
+string? b = Console.ReadLine();
 string[] CoordB = b.Split(' ');
 double s = Math.Sqrt( // Вычисляем расстояние между точками
                     Math.Pow(Convert.ToInt32(CoordB[0]) - Convert.ToInt32(CoordA[0]), 2) +
