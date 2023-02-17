@@ -6,7 +6,7 @@
 string InputNumber(string str) // проверяем чтобы было число, но возвращаем строку
 {
     int num;
-    string text;
+    string? text;
     while(true)
     {
         System.Console.Write(str);

@@ -6,7 +6,7 @@
 int InputNumber(string str) 
 {
     int num;
-    string text;
+    string? text;
     while(true)
     {
         System.Console.Write(str);

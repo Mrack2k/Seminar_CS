@@ -18,7 +18,7 @@ int MyPow(int a, int b) // возведение числа а в степень 
 int InputNumber(string str) // скопировал из семинара проверку на корректность ввода числа. Уже пробовал TryParse в предыдущем семинаре.. 
 {
     int num;
-    string text;
+    string? text;
     while(true)
     {
         System.Console.Write(str);
